@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <title>FrontEnd Vaders | Blog</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>IBM Intern Web Project</h1>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Project Blog</h2>
+            <p>This blog provides an overview of the web project developed during our internship at IBM.</p>
+        </section>
+        <section id="about">
+            <h2>About the Project</h2>
+            <p>The IBM Intern Web Project is a comprehensive web application designed to enhance user experience and streamline various processes. Developed using modern web technologies, this project demonstrates our commitment to creating efficient and user-friendly applications.</p>
+        </section>
+        <section id="project">
+            <h2>Project Details</h2>
+            <article>
+                <h3>How It Works</h3>
+                <p>The application features a responsive design, ensuring accessibility across all devices. Key functionalities include:</p>
+                <ul>
+                    <li>Interactive user interface for an engaging experience</li>
+                    <li>Efficient data management through integration with backend services</li>
+                    <li>Optimized performance for quick loading times</li>
+                    <li>User authentication and profile management</li>
+                </ul>
+                <p>Users can explore various courses, register for them, and track their progress through a dedicated dashboard. The application also provides real-time notifications and updates to keep users informed.</p>
+                <p>Check out the live project <a href="https://codebydhiraj.github.com">here</a>.</p>
+                <h3>Courses Offered</h3>
+                <p>Our application offers a variety of courses in different domains, including:</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Data Science</li>
+                    <li>Machine Learning</li>
+                    <li>Cloud Computing</li>
+                    <li>Cyber Security</li>
+                </ul>
+                <p>Each course is designed to provide comprehensive knowledge and practical experience, helping users to develop their skills and advance their careers.</p>
+            </article>
+        </section>
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <ul>
+                <li>Dhiraj Kumar (Developer)</li>
+                <li>Kshitij Kumar (Developer + Leader)</li>
+                <li>Sanjeet Tiwari(Developer)</li>
+                <li>Pallavi Gupta(Developer)</li>
+            </ul>
+            <p>Together, we collaborated to develop and refine this project, bringing our unique skills and perspectives to create a robust and user-friendly application.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to connect with us, please feel free to reach out!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FrontEnd Vaders &#10084;. All rights reserved.</p>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="topBtn" title="Go to top">
+        &#8679;
+    </button>
+
+    <script>
+        // Get the button
+        var topBtn = document.getElementById("topBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        topBtn.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
